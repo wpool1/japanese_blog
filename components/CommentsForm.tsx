@@ -12,8 +12,8 @@ export const CommentsForm = ( {slug}: {slug: any}  ) => {
     const storeDataEl = useRef();
 
     useEffect(() => {
-        nameEl.current.value = window.localStorage.getItem('name');
-        emailEl.current.value = window.localStorage.getItem('email');
+        nameEl.current.value = window?.localStorage?.getItem('name');
+        emailEl.current.value = window?.localStorage?.getItem('email');
     })
 
     const handleCommentSubmission = () => {
