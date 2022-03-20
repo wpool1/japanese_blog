@@ -2,6 +2,7 @@ import React, { useRef, useState, useEffect } from 'react'
 
 import { submitComment } from '../services';
 
+/*
 export const CommentsForm = ( {slug}: {slug: any}  ) => {
     const [error, setError] = useState(false);
     const [localStorage, setLocalStorage] = useState(null);
@@ -12,8 +13,8 @@ export const CommentsForm = ( {slug}: {slug: any}  ) => {
     const storeDataEl = useRef();
 
     useEffect(() => {
-        nameEl.current.value = window?.localStorage?.getItem('name');
-        emailEl.current.value = window?.localStorage?.getItem('email');
+        nameEl.current.value = window.localStorage.getItem('name');
+        emailEl.current.value = window.localStorage.getItem('email');
     })
 
     const handleCommentSubmission = () => {
@@ -96,3 +97,4 @@ export const CommentsForm = ( {slug}: {slug: any}  ) => {
         </div>
     )
 }
+*/
