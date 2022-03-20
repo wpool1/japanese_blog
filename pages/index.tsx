@@ -4,7 +4,11 @@ import Image from 'next/image'
 import { PostCard, Categories, PostWidget } from '../components';
 import { getPosts } from '../services'
 
-const Home: NextPage = ({ posts }: { posts: any }) => {
+interface Props { 
+  posts: any 
+}
+
+const Home: NextPage<Props> = ({ posts }) => {
   return (
     <div className="container mx-auto px-10 mb-8">
       <Head>
