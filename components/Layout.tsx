@@ -1,7 +1,7 @@
 import React from 'react'
 import { Header } from './';
 
-export const Layout = ({ children }) => {
+export const Layout = ({ children }: {children: any} ) => {
     return (
         <div>
             <Header />

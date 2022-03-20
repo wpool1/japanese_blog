@@ -2,7 +2,7 @@ import React from 'react'
 import moment from 'moment';
 import Link from 'next/link';
 
-export const PostCard = ({ post }) => {
+export const PostCard = ({ post }: {post: any} ) => {
 
     return (
         <div className="bg-white shadow-lag rounded-lg p-0 lg:p-8 pb-12 mg-8 mb-8">

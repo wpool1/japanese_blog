@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect } from 'react'
 
 import { submitComment } from '../services';
 
-export const CommentsForm = ( {slug} ) => {
+export const CommentsForm = ( {slug}: {slug: any}  ) => {
     const [error, setError] = useState(false);
     const [localStorage, setLocalStorage] = useState(null);
     const [showSuccessMessage, setShowSuccessMessage] = useState(false);

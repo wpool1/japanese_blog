@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 import { getRecentPosts, getSimilarPosts } from '../services'
 
-export const PostWidget = ({ categories, slug }) => {
+export const PostWidget = ({ categories, slug }: {categories: any, slug: any} ) => {
     const [relatedPosts, setRelatedPosts] = useState([]);
 
     useEffect(() => {
