@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { getRecentPosts, getSimilarPosts } from '../services'
 
 export const PostWidget = ({ categories, slug }: {categories: any, slug: any} ) => {
-    const [relatedPosts, setRelatedPosts] = useState([]);
+    const [relatedPosts, setRelatedPosts] = useState<any[]>([]);
 
     useEffect(() => {
         if(slug) {
