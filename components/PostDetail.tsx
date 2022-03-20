@@ -2,7 +2,7 @@ import React from 'react'
 import moment from 'moment'
 
 export const PostDetail = ({ post }: {post: any} ) => {
-    const getContentFragment = (index, text, obj, type) => {
+    const getContentFragment = (index: any, text: any, obj: any, type: any) => {
         let modifiedText = text;
     
         if (obj) {
