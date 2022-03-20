@@ -22,7 +22,7 @@ export const PostWidget = ({ categories, slug }: {categories: any, slug: any} ) 
             <h3 className="text-xl mb-8 font-semibold border-b pb-4">
                 {slug ? '関連の投稿' : '最近の投稿'}
             </h3>
-            {relatedPosts.map((post) => (
+            {relatedPosts.map((post: any) => (
                 <div key={post.title} className="flex items-center w-full mb-4  hover:text-orange-400">
                     <div className="flex-grow ml-4">
                         <p className="text-gray-500 font-xs">
